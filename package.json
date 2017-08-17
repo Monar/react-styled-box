@@ -1,6 +1,6 @@
 {
   "name": "react-styled-box",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Styled component with simple mapping to basic position oriented styles",
   "author": "Piotr Tomasz Monarski",
   "license": "MIT",
@@ -19,6 +19,7 @@
   },
   "peerDependencies": {
     "styled-components": "^2.1.1",
+    "react": "^15.0.0 || ^16.0.0",
     "prop-types": "^15.5.10"
   },
   "keywords": [
