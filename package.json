@@ -1,9 +1,13 @@
 {
   "name": "react-styled-box",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Styled component with simple mapping to basic position oriented styles",
   "author": "Piotr Tomasz Monarski",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Monar/react-styled-box"
+  },
   "main": "lib/react-styled-box.js",
   "scripts": {
     "build": "rollup -c"
