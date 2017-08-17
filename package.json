@@ -1,0 +1,42 @@
+{
+  "name": "react-styled-box",
+  "version": "0.0.1",
+  "description": "Styled component with simple mapping to basic position oriented styles",
+  "author": "Piotr Tomasz Monarski",
+  "license": "MIT",
+  "main": "lib/react-styled-box.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "prop-types": "^15.5.10",
+    "rollup": "^0.43.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "styled-components": "^2.1.1"
+  },
+  "peerDependencies": {
+    "styled-components": "^2.1.1",
+    "prop-types": "^15.5.10"
+  },
+  "keywords": [
+    "react",
+    "styled-components",
+    "component",
+    "styled",
+    "flexbox",
+    "box"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ]
+  }
+}
