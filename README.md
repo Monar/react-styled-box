@@ -31,7 +31,6 @@ Instead of writing of all of the "styled" components upfront you can prototype t
 
 propType | sample values | description
 --- | --- | ---
-
 display | "flex", "block" | **flex** - default value
 margin | 10, "50%" | number values are suffixed with **px**
 padding | 10, "50%" | number values are suffixed with **px**
@@ -52,4 +51,4 @@ flexGrow | 1, 2 |
 flexShrink | 1, 0 |
 flexBasis | 30, "auto", "30%" | number values are suffixed with **px**
 flex | "0 1 auto", "1 0" |
-alignSelf.| "auto", "flex-start" |
+alignSelf | "auto", "flex-start" |
