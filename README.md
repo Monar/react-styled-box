@@ -37,8 +37,10 @@ margin | 10, "50%" | number values are suffixed with **px**
 padding | 10, "50%" | number values are suffixed with **px**
 width | 10, "50%" | number values are suffixed with **px**
 maxWidth |10, "50%" | number values are suffixed with **px**
+minWidth |10, "50%" | number values are suffixed with **px**
 height | 10, "50%" | number values are suffixed with **px**
 maxHeight | 10, "50%" | number values are suffixed with **px**
+minHeight | 10, "50%" | number values are suffixed with **px**
 flexDirection | "row", "column" |
 flexWrap | "nowrap", "wrap" |
 flexFlow | "nowrap column", "wrap row" |
