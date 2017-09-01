@@ -2,7 +2,7 @@
 
 #### What is it ?
 
-This is a simple `styled.div` component, that makes your basic positioning of elements faster. 
+This is a simple `styled.div` component, that makes your basic positioning of elements faster.
 Instead of writing of all of the "styled" components upfront you can prototype the layout faster with this ready `<Box>`.
 
 #### How it works ?
@@ -29,20 +29,25 @@ Instead of writing of all of the "styled" components upfront you can prototype t
 
 #### What does it support ?
 
-```js
-const propTypes = {
-  display: PropTypes.oneOf(['block', 'inline-block', 'inline', 'flex', 'inline-flex']),
-  margin: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  padding: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  flexDirection: Flex(PropTypes.oneOf(['row', 'row-reverse', 'column', 'column-reverse'])),
-  flexWrap: Flex(PropTypes.oneOf(['nowrap', 'wrap', 'wrap-reverse'])),
-  justifyContent: Flex(PropTypes.oneOf(['flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly'])),
-  alignItems: Flex(PropTypes.oneOf(['flex-start', 'flex-end',  'center', 'baseline', 'stretch'])),
-  alignContent: Flex(PropTypes.oneOf(['flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'stretch'])),
-  order: Flex(PropTypes.number),
-  flex: Flex(PropTypes.string),
-  alignSelf: Flex(PropTypes.oneOf(['auto', 'flex-start', 'flex-end',  'center', 'baseline', 'stretch'])),
-};
-```
+propType | sample values | description
+--- | --- | ---
+
+display | "flex", "block" | **flex** - default value
+margin | 10, "50%" | number values are suffixed with **px**
+padding | 10, "50%" | number values are suffixed with **px**
+width | 10, "50%" | number values are suffixed with **px**
+maxWidth |10, "50%" | number values are suffixed with **px**
+height | 10, "50%" | number values are suffixed with **px**
+maxHeight | 10, "50%" | number values are suffixed with **px**
+flexDirection | "row", "column" |
+flexWrap | "nowrap", "wrap" |
+flexFlow | "nowrap column", "wrap row" |
+justifyContent | "flex-start", "center" |
+alignItems | "base-line", "flex-start" |
+alignContent | "flex-start", "space-around" |
+order | 1, 2 |
+flexGrow | 1, 2 |
+flexShrink | 1, 0 |
+flexBasis | 30, "auto", "30%" | number values are suffixed with **px**
+flex | "0 1 auto", "1 0" |
+alignSelf.| "auto", "flex-start" |
