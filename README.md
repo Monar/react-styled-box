@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/react-styled-box.svg)](https://badge.fury.io/js/react-styled-box)
+
 # react-styled-box
 
 #### What is it ?
