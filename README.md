@@ -42,7 +42,7 @@ maxHeight | 10, "50%" | number values are suffixed with **px**
 minHeight | 10, "50%" | number values are suffixed with **px**
 flexDirection | "row", "column" |
 flexWrap | "nowrap", "wrap" |
-flexFlow | "nowrap column", "wrap row" |
+flexFlow | "column nowrap", "row wrap" |
 justifyContent | "flex-start", "center" |
 alignItems | "base-line", "flex-start" |
 alignContent | "flex-start", "space-around" |
