@@ -4,12 +4,13 @@
 
 #### What is it ?
 
-This is a simple `styled.div` component, that makes your basic positioning of elements faster.
-Instead of writing of all of the "styled" components upfront you can prototype the layout faster with this ready `<Box>`.
+This is a simple `styled` component, that makes your basic positioning of
+elements faster.  Instead of writing all of the "styled" components upfront you
+can prototype the layout faster with this ready `<Box>`.
 
 #### How it works ?
 
-```js
+```jsx
 
 <Box flexDirection="column">
   <Box flexDirection="row">
@@ -30,27 +31,29 @@ Instead of writing of all of the "styled" components upfront you can prototype t
 ```
 
 #### What does it support ?
+Check [A Complete Guide to FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-propType | sample values | description
---- | --- | ---
-display | "flex", "block" | **flex** - default value
-margin | 10, "50%" | number values are suffixed with **px**
-padding | 10, "50%" | number values are suffixed with **px**
-width | 10, "50%" | number values are suffixed with **px**
-maxWidth |10, "50%" | number values are suffixed with **px**
-minWidth |10, "50%" | number values are suffixed with **px**
-height | 10, "50%" | number values are suffixed with **px**
-maxHeight | 10, "50%" | number values are suffixed with **px**
-minHeight | 10, "50%" | number values are suffixed with **px**
-flexDirection | "row", "column" |
-flexWrap | "nowrap", "wrap" |
-flexFlow | "column nowrap", "row wrap" |
-justifyContent | "flex-start", "center" |
-alignItems | "base-line", "flex-start" |
-alignContent | "flex-start", "space-around" |
-order | 1, 2 |
-flexGrow | 1, 2 |
-flexShrink | 1, 0 |
-flexBasis | 30, "auto", "30%" | number values are suffixed with **px**
-flex | "0 1 auto", "1 0" |
-alignSelf | "auto", "flex-start" |
+propType | valid types | sample values | description
+--- | --- | --- | ---
+`display` | string | "flex", "block" | **flex** - default value
+`margin` | integer, string |10, "50%" | number values are suffixed with **px**
+`padding` | integer, string | 10, "50%" | number values are suffixed with **px**
+`width` | integer, string | 10, "50%" | number values are suffixed with **px**
+`maxWidth` | integer, string |10, "50%" | number values are suffixed with **px**
+`minWidth` | integer, string |10, "50%" | number values are suffixed with **px**
+`height` | integer, string | 10, "50%" | number values are suffixed with **px**
+`maxHeight` | integer, string | 10, "50%" | number values are suffixed with **px**
+`minHeight` | integer, string | 10, "50%" | number values are suffixed with **px**
+`flexDirection` | string | "row", "column" |
+`flexWrap` | string | "nowrap", "wrap" |
+`flexFlow` | string | "column nowrap", "row wrap" |
+`justifyContent` | string | "flex-start", "center" |
+`alignItems` | string | "base-line", "flex-start" |
+`alignContent` | string | "flex-start", "space-around" |
+`order` | integer | 1, 2 |
+`flexGrow` | integer | 1, 2 |
+`flexShrink` | integer | 1, 0 |
+`flexBasis` | integer, string | 30, "auto", "30%" | number values are suffixed with **px**
+`flex` | string | "0 1 auto", "1 0" |
+`alignSelf` | string | "auto", "flex-start" |
+
