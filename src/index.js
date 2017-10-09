@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -58,7 +59,15 @@ const propTypes = {
   alignSelf: Flex(PropTypes.oneOf(['auto', 'flex-start', 'flex-end',  'center', 'baseline', 'stretch'])),
 };
 
-export const Box = styled.div`
+function cleanProps(props) {
+  return Object.keys(props)
+    .filter(p=>!propTypes[p])
+    .reduce((obj, p) => { obj[p] = props[p]; return obj; }, {});
+};
+
+const Component = (props) => <div {...cleanProps(props)} />
+
+export const Box = styled(Component)`
 ${(props) => toCss(props, propTypes, propsMap)}
 `;
 Box.displayName = 'Box';
