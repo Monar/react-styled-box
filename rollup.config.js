@@ -19,7 +19,8 @@ export default {
   globals: {
     'styled-components': 'styled',
     'prop-types': 'PropTypes',
+    'react': 'React',
   },
-  external: ['styled-components', 'prop-types'],
+  external: ['react', 'styled-components', 'prop-types'],
   dest: 'lib/react-styled-box.js',
 };

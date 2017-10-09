@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from './index';
+import { Box, propTypes, propsMap } from './box';
 import { shallow, mount } from 'enzyme';
 import styled from 'styled-components';
 import PropType from 'prop-types';
@@ -44,4 +44,11 @@ describe('Box', () => {
 
     expect(handleClick).toBeCalled();
   });
+
+  it('propsMap and propTypes have matching keys', () => {
+    expect(Object.keys(propsMap)).toEqual(expect.arrayContaining(Object.keys(propTypes)));
+    expect(Object.keys(propTypes)).toEqual(expect.arrayContaining(Object.keys(propsMap)));
+  });
+
 });
+
