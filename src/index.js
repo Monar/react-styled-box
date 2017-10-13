@@ -1,4 +1,4 @@
-import { Box } from './box';
+import { Box, propTypes } from './box';
 
-export { Box }
+export { Box, propTypes }
 export default Box;
