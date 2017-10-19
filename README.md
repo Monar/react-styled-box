@@ -4,7 +4,7 @@
 
 #### What is it ?
 
-This is a simple [styled](https://github.com/styled-components/styled-components) component, that makes your basic positioning of
+This is a simple [styled.div](https://github.com/styled-components/styled-components) component, that makes your basic positioning of
 elements faster.  Instead of writing all of the "styled" components upfront you
 can prototype the layout faster with this ready `<Box>`.
 

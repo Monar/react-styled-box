@@ -1,7 +1,7 @@
 {
   "name": "react-styled-box",
-  "version": "1.0.2",
-  "description": "Styled component with simple mapping to basic position oriented styles",
+  "version": "1.1.0",
+  "description": "Styled component allowing to speed up prototyping layouts.",
   "author": "Piotr Tomasz Monarski",
   "license": "MIT",
   "repository": {
