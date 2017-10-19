@@ -1,17 +1,12 @@
 import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-  entry: 'src/index.js',
-  format: 'umd',
-  exports: 'named',
-  moduleName: 'window',
+  input: 'src/index.js',
+  output: {
+    file: 'lib/react-styled-box.js',
+    format: 'es',
+  },
   plugins: [
-    resolve({
-      customResolveOptions: {
-        moduleDirectory: 'node_modules',
-      },
-    }),
     babel({
       exclude: 'node_modules/**',
     }),
@@ -19,8 +14,6 @@ export default {
   globals: {
     'styled-components': 'styled',
     'prop-types': 'PropTypes',
-    'react': 'React',
   },
-  external: ['react', 'styled-components', 'prop-types'],
-  dest: 'lib/react-styled-box.js',
+  external: ['styled-components', 'prop-types'],
 };
