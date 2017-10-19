@@ -18,21 +18,10 @@ exports[`Box default render 1`] = `
   display: flex;
 }
 
-<Component
+<div
     className="c0"
     display="flex"
-  >
-    .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-<div
-      className="c0"
-    />
-  </Component>
+  />
 </Box>
 `;
 
@@ -55,22 +44,10 @@ exports[`Box should pass event handlers 1`] = `
   display: flex;
 }
 
-<Component
+<div
     className="c0"
     display="flex"
     onClick={[Function]}
-  >
-    .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-<div
-      className="c0"
-      onClick={[Function]}
-    />
-  </Component>
+  />
 </Box>
 `;

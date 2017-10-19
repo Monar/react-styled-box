@@ -10,13 +10,6 @@ describe('Box', () => {
     expect(Component).toMatchSnapshot();
   });
 
-  it('should not pass styling props to rendered component', () => {
-    const Component = mount(<Box width="100%" height="100%"/>).html();
-    expect(Component).not.toMatch(/display="flex"/);
-    expect(Component).not.toMatch(/height="100%"/);
-    expect(Component).not.toMatch(/width="100%"/);
-  });
-
   it('should pass all valid props not used for styling', () => {
     const Component = mount(
       <Box
