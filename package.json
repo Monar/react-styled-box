@@ -48,24 +48,6 @@
     "flexbox",
     "box"
   ],
-  "babel": {
-    "presets": [
-      [
-        "es2015",
-        {
-          "modules": false
-        }
-      ]
-    ],
-    "env": {
-      "test": {
-        "presets": [
-          "react",
-          "es2015"
-        ]
-      }
-    }
-  },
   "jest": {
     "setupFiles": [
       "./testPolyfills.js"
