@@ -37,8 +37,8 @@
     "styled-components": "2.2.1"
   },
   "peerDependencies": {
-    "prop-types": "^15 || ^16",
-    "styled-components": "^2"
+    "prop-types": ">=15",
+    "styled-components": ">=2"
   },
   "keywords": [
     "react",
