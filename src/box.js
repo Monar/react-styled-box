@@ -26,6 +26,9 @@ export const propsMap = {
   flexBasis: { name: 'flex-basis', apply: defaultPx },
   flex: { name: 'flex', apply: ind },
   alignSelf: { name: 'align-self', apply: ind },
+  overflow: { name: 'overflow', apply: ind },
+  overflowX: { name: 'overflow-x', apply: ind },
+  overflowY: { name: 'overflow-y', apply: ind },
 };
 
 export const flexDirectionValues = ['row', 'row-reverse', 'column', 'column-reverse'];
@@ -56,6 +59,9 @@ export const propTypes = {
   flexBasis: Flex(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
   flex: Flex(PropTypes.string),
   alignSelf: Flex(PropTypes.oneOf(['auto', 'flex-start', 'flex-end',  'center', 'baseline', 'stretch'])),
+  overflow: PropTypes.oneOf(['visible', 'hidden', 'scroll', 'auto', 'initial', 'inherit']),
+  overflowX: PropTypes.oneOf(['visible', 'hidden', 'scroll', 'auto', 'initial', 'inherit']),
+  overflowY: PropTypes.oneOf(['visible', 'hidden', 'scroll', 'auto', 'initial', 'inherit']),
 };
 
 export const Box = styled.div`
