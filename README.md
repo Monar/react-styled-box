@@ -11,6 +11,7 @@ can prototype the layout faster with this ready `<Box>`.
 #### How it works ?
 
 ```jsx
+import Box from 'react-styled-box';
 
 <Box flexDirection="column">
   <Box flexDirection="row">
@@ -56,3 +57,6 @@ propType | valid types | sample values | description
 `flexBasis` | integer, string | `30`, `'auto'`, `'30%'` | number values are suffixed with **px**
 `flex` | string | `'0 1 auto'`, `'1 0'` |
 `alignSelf` | string | `'auto'`, `'flex-start'` |
+`overflow` | string | `visible`, `hidden` |
+`overflowX` | string | `visible`, `hidden` |
+`overflowY` | string | `visible`, `hidden` |
