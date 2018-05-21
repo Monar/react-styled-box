@@ -1,6 +1,6 @@
 {
   "name": "react-styled-box",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Styled component with simple mapping to basic position oriented styles",
   "author": "Piotr Tomasz Monarski",
   "license": "MIT",
@@ -17,28 +17,28 @@
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-core": "6.26.0",
-    "babel-jest": "21.0.2",
+    "babel-core": "6.26.3",
+    "babel-jest": "22.4.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "6.24.1",
-    "enzyme": "2.9.1",
-    "enzyme-to-json": "1.5.1",
-    "jest": "21.0.2",
-    "jest-enzyme": "3.8.2",
-    "jest-styled-components": "4.5.0",
+    "enzyme": "3.3.0",
+    "enzyme-to-json": "3.3.4",
+    "jest": "22.4.4",
+    "jest-enzyme": "6.0.0",
+    "jest-styled-components": "5.0.1",
     "prop-types": "^15.5.10",
-    "react": "15.6.1",
-    "react-dom": "15.6.1",
-    "react-test-renderer": "15.6.1",
-    "rollup": "^0.43.0",
-    "rollup-plugin-babel": "^2.7.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-test-renderer": "16.3.2",
+    "rollup": "^0.59.1",
+    "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "styled-components": "^2.1.1"
+    "styled-components": "^3.2.6"
   },
   "peerDependencies": {
     "prop-types": "^15 || ^16",
     "react": "^15 || ^16",
-    "styled-components": "^2"
+    "styled-components": "^2 || ^3"
   },
   "keywords": [
     "react",
