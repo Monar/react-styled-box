@@ -1,19 +1,36 @@
 import babel from 'rollup-plugin-babel';
 
-export default {
+const share = {
   input: 'src/index.js',
-  output: {
-    file: 'lib/react-styled-box.js',
-    format: 'es',
-  },
+  external: ['react', 'immutable'],
   plugins: [
-    babel({
-      exclude: 'node_modules/**',
-    }),
+    babel({ exclude: 'node_modules/**' }),
   ],
-  globals: {
-    'styled-components': 'styled',
-    'prop-types': 'PropTypes',
-  },
   external: ['styled-components', 'prop-types'],
-};
+}
+
+export default [
+  {
+    ...share,
+    output: {
+      file: 'lib/react-styled-box.cjs.js',
+      format: 'cjs',
+      exports: 'named',
+      globals: {
+        'styled-components': 'styled',
+        'prop-types': 'PropTypes',
+      },
+    },
+  },
+  {
+    ...share,
+    output: {
+      file: 'lib/react-styled-box.es.js',
+      format: 'es',
+      globals: {
+        'styled-components': 'styled',
+        'prop-types': 'PropTypes',
+      },
+    },
+  }
+];

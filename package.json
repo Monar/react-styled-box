@@ -1,6 +1,6 @@
 {
   "name": "react-styled-box",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Styled component with simple mapping to basic position oriented styles",
   "author": "Piotr Tomasz Monarski",
   "license": "MIT",
@@ -8,37 +8,43 @@
     "type": "git",
     "url": "https://github.com/Monar/react-styled-box"
   },
-  "main": "lib/react-styled-box.js",
+  "main": "lib/react-styled-box.cjs.js",
+  "module": "lib/react-styled-box.es.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c rollup.config.js",
     "test": "jest --env=jsdom",
     "test:watch": "jest --watch --env=jsdom",
-    "test:coverage": "jest --env=jsdom --coverage"
+    "test:coverage": "jest --env=jsdom --coverage",
+    "publish-please": "publish-please",
+    "prepublishOnly": "publish-please guard",
+    "testAndBuild": "yarn test; yarn build"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-jest": "21.2.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-react": "6.24.1",
-    "enzyme": "3.1.1",
-    "enzyme-adapter-react-16": "1.0.4",
-    "enzyme-to-json": "3.2.2",
-    "jest": "21.2.1",
-    "jest-enzyme": "4.0.1",
-    "jest-styled-components": "4.9.0",
-    "prop-types": "15.6.0",
-    "react": "16.1.0",
-    "react-dom": "16.1.0",
-    "react-test-renderer": "16.1.0",
-    "rollup": "0.51.5",
-    "rollup-plugin-babel": "3.0.2",
-    "rollup-plugin-node-resolve": "3.0.0",
-    "styled-components": "2.2.3"
+    "@babel/core": "7.1.6",
+    "@babel/preset-env": "7.1.6",
+    "@babel/preset-react": "7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.7.0",
+    "enzyme-to-json": "3.3.4",
+    "jest": "23.6.0",
+    "jest-enzyme": "7.0.1",
+    "jest-styled-components": "6.3.1",
+    "prop-types": "15.6.2",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-test-renderer": "16.6.3",
+    "rollup": "0.67.3",
+    "rollup-plugin-babel": "4.0.3",
+    "styled-components": "4.1.1"
   },
   "peerDependencies": {
-    "prop-types": "^15 || ^16",
-    "styled-components": "^2"
+    "prop-types": "*",
+    "styled-components": "*"
   },
   "keywords": [
     "react",
@@ -47,23 +53,5 @@
     "styled",
     "flexbox",
     "box"
-  ],
-  "babel": {
-    "presets": [
-      [
-        "es2015",
-        {
-          "modules": false
-        }
-      ]
-    ],
-    "env": {
-      "test": {
-        "presets": [
-          "react",
-          "es2015"
-        ]
-      }
-    }
-  }
+  ]
 }

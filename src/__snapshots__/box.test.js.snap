@@ -18,6 +18,31 @@ exports[`Box default render 1`] = `
 </Box>
 `;
 
+exports[`Box renders with some styling props 1`] = `
+.c0 {
+  display: block;
+  margin: 25px;
+  padding: 15px 10em 0;
+  width: 100px;
+  overflow: hidden;
+}
+
+<Box
+  display="block"
+  margin={25}
+  overflow="hidden"
+  padding="15px 10em 0"
+  width={100}
+>
+  <div
+    className="c0"
+    display="block"
+    overflow="hidden"
+    width={100}
+  />
+</Box>
+`;
+
 exports[`Box should pass event handlers 1`] = `
 .c0 {
   display: -webkit-box;
@@ -28,12 +53,12 @@ exports[`Box should pass event handlers 1`] = `
 
 <Box
   display="flex"
-  onClick={[Function]}
+  onClick={[MockFunction]}
 >
   <div
     className="c0"
     display="flex"
-    onClick={[Function]}
+    onClick={[MockFunction]}
   />
 </Box>
 `;

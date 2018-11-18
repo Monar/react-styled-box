@@ -10,6 +10,19 @@ describe('Box', () => {
     expect(Component).toMatchSnapshot();
   });
 
+  it('renders with some styling props', () => {
+    const Component = mount(
+      <Box
+        display="block"
+        margin={25}
+        padding="15px 10em 0"
+        width={100}
+        overflow="hidden"
+      />
+    );
+    expect(Component).toMatchSnapshot();
+  });
+
   it('should pass all valid props not used for styling', () => {
     const Component = mount(
       <Box
